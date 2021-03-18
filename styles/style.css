@@ -1,0 +1,70 @@
+* {
+    box-sizing: border-box;
+  }
+
+body {
+    margin: 0;
+}
+.topnav {
+    background-color: white;
+    padding: 15px;
+}
+.col-1 {width: 33.33%;}
+.col-2 {width: 66.66%;}
+.col-3 {width: 100%;}
+[class*="col-"] {
+    float: left;
+    padding: 15px;
+    /**border: 1px solid red;**/
+  }
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+
+.topnav a {
+  float: right;
+  color: black;
+  padding: 15px 10px;
+  text-decoration: none;
+  font-size: 15px;
+}
+.topnav a:hover {
+    text-decoration: underline;
+}
+#inputWrapper {
+    position: absolute;
+    bottom: 10px;
+}
+#logo {
+    height: 92px;
+    position: relative;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 150px;
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Google_2015_logo.svg/368px-Google_2015_logo.svg.png);
+}
+
+
+input {
+    background-color: var(--search-box-bg, white);
+    /* border: none; */
+    border-radius: calc(0.5 * 44px);
+    color: var(--search-box-text);
+    font-size: 15px;
+    height: 100%;
+    outline: none;
+    padding-inline-end: 44px;
+    padding-inline-start: 52px;
+    position: relative;
+    width: 100%;
+}
+input[type="search" i] {
+    appearance: auto;
+    box-sizing: border-box;
+    padding: 10px 40px;
+}
+
+
